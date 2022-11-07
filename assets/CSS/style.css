@@ -111,5 +111,39 @@ button:hover {
   
   }
 
+  .formation--on {
+    display: block;
+  
+  }
+
+  .xp {
+    display: none;
+  
+  }
+
+  .xp--on {
+    display: block;
+  
+  }
+
+/* tableau */
+table {
+    margin: 15px;
+    border-collapse : separate;
+    border-spacing : 10px;
+}
+
+th {
+    font-size: 1.1rem;
+    font-weight: bold;
+    padding: 10px 0;
+}
+
+td {
+    font-size: 1rem;
+}
+
+
+
 
  
