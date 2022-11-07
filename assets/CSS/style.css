@@ -1,0 +1,115 @@
+body{
+    height: 100%;
+  
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+header{
+    background-image: url(../background/cerisier.jpg);
+    background-repeat: no-repeat;
+    background-size: auto;
+    width: 100%;
+    height: 150px;
+
+}
+
+header h1{
+    font-size: 50px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    padding: 50px;
+}
+
+
+main{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    height: 100%;
+    width: 100%;
+    margin: 10px;
+}
+
+section{
+    width: 50%;
+    box-sizing: border-box;
+    min-width: 250px;
+    margin: 10px;
+}
+
+li{
+    padding: 5px;
+}
+
+.left__div{
+    
+    text-align: justify;
+    padding: 10px;
+   /* border: 2px solid black;*/
+    
+}
+
+.left__div img{
+    width: 20%;
+}
+
+.left__div h2{
+    font-size: 20px;
+    padding: 10px;
+}
+
+.right__div{
+    text-align: justify;
+    padding: 10px;
+   /* border: 2px solid black;*/
+}
+
+footer{
+
+    width: 100%;
+    height: 50px;
+    display: flex;
+    flex-wrap: nowrap;
+    align-content: stretch;
+    justify-content: center;
+    align-items: flex-start;
+   
+}
+
+button{
+    background-color: #fff;
+    border: 0 solid #adcdf8;
+    border-radius: 0.6rem;
+    box-sizing: border-box;
+    color: inherit;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 1.1rem;
+    padding: 1rem 1.6rem;
+    text-align: center;
+    transition: all .1s cubic-bezier(.4, 0, .2, 1);
+    box-shadow: 0px 1px 2px rgba(53, 105, 216, 0.719);
+    margin: 1rem;
+
+}
+
+button:hover {
+    background-color: #264f92;
+    color: #fff;
+  }
+
+  .formation {
+    display: none;
+  
+  }
+
+
+ 
