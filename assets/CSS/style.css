@@ -9,7 +9,7 @@ a{
 }
 
 header{
-    background-image: url(../background/cerisier.jpg);
+    
     background-repeat: no-repeat;
     background-size: auto;
     width: 100%;
@@ -20,9 +20,47 @@ header{
 header h1{
     font-size: 50px;
     font-weight: bold;
-    color: white;
+    color: black;
     text-align: center;
     padding: 50px;
+}
+
+/* gestion changement background*/
+
+.palette{
+    position:fixed;
+    top: 1;
+    left: 0;
+    width: 100%;
+}
+
+.palette__img {
+    cursor: pointer;
+    width: 10px;
+    height: 10px;
+    border-radius: 10px;
+}
+
+.palette__img--ete{
+    background-image: url(../background/tournesol.jpg)
+}
+
+.palette__img--automne{
+    background-image: url(../background/feuilles.jpg)
+}
+
+.palette__img--hiver{
+    background-image: url(../background/sapin.jpg)
+}
+
+.palette__img--printemps{
+    background-image: url(../background/cerisier.jpg)
+}
+
+.palette__img--on{
+    transform: scale(1.5);
+    border : 1px solid black;
+
 }
 
 
@@ -146,4 +184,27 @@ td {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+/* RPG*/
+
+.player {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 15px 0 15px 35px;
+    border-color: transparent transparent transparent blue;
+  
+    margin: 20px;
+  }
  
