@@ -7,7 +7,6 @@
 
 html {
     font-size: 62.5%;
-
 }
 
 .container {
@@ -32,16 +31,22 @@ html {
 }
 /*apparition du formulaire au click*/
 .container.change .banner{
-    left: 5rem;
+    left: 10rem;
 
-}
-
-.banner img{
-    width: 40%;
 }
 
 .banner p{
-    font-size: 2rem;
+    font-size: 3rem;
+}
+
+.banner i{
+    width: 4rem;
+    height: 4rem;
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+    margin-top: 1rem;
 }
 
 .green-bg{
