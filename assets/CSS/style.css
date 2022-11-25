@@ -1,6 +1,114 @@
-body{
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+
+}
+
+html {
+    font-size: 62.5%;
+
+}
+
+.container {
+    width: 100%;
     height: 100%;
-  
+    display: flex;
+}
+
+.form-wrapper {
+    width: 100rem;
+    height: 100rem;
+}
+
+.banner {
+    position:absolute;
+    left: -30rem;
+    color: #fff;
+    width: 30rem;
+    z-index: 100;
+    /* transition pour l'apparition du formulaire au click*/
+    transition: left 0.8s; 
+}
+/*apparition du formulaire au click*/
+.container.change .banner{
+    left: 5rem;
+
+}
+
+.banner img{
+    width: 40%;
+}
+
+.banner p{
+    font-size: 2rem;
+}
+
+.green-bg{
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, #4062ac, #3a60b1, #0d2861);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 50;
+    /* transition pour l'apparition du formulaire au click*/
+    transition: width 1.5s cubic-bezier(0.19,1,0.22,1);
+}
+
+/* apparition du cv au click*/
+.container.change .green-bg{
+    width: 30%;
+}
+.container.change .green-bg h1{
+    width: 15rem;
+    left: 10rem;
+}
+
+.green-bg h1 {
+    position: absolute;
+    top: 30%;
+    left: 40%;
+    font-size: 50px;
+    width: 41rem;
+    height: 5rem;
+    letter-spacing: 0.1rem;
+    color: #fff;
+
+}
+
+.green-bg button {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%);
+    width: 17rem;
+    height: 5rem;
+    background-color: transparent;
+    border: 0.1rem solid #fff;
+    border-radius: 3rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    color: #fff;
+    cursor: pointer;
+
+}
+
+.cv-on {
+    width: 60rem;
+    height: 75%;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    /* transition pour l'apparition du formulaire au click*/
+    transition: left 1.5s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+/*apparition du cv au click*/
+.container.change .cv-on{
+    left: 70rem;
 }
 
 a{
@@ -8,118 +116,44 @@ a{
     color: inherit;
 }
 
-header{
-    
-    background-repeat: no-repeat;
-    background-size: auto;
-    width: 100%;
-    height: 150px;
-
+.skills{
+    font-size: 2rem;
+    letter-spacing: .2rem;
 }
 
-header h1{
-    font-size: 50px;
+.skills h2{
+    font-size: 2.5rem;
     font-weight: bold;
-    color: black;
-    text-align: center;
-    padding: 50px;
-}
-
-/* gestion changement background*/
-
-.palette{
-    position:fixed;
-    top: 1;
-    left: 0;
-    width: 100%;
-}
-
-.palette__img {
-    cursor: pointer;
-    width: 10px;
-    height: 10px;
-    border-radius: 10px;
-}
-
-.palette__img--ete{
-    background-image: url(../background/tournesol.jpg)
-}
-
-.palette__img--automne{
-    background-image: url(../background/feuilles.jpg)
-}
-
-.palette__img--hiver{
-    background-image: url(../background/sapin.jpg)
-}
-
-.palette__img--printemps{
-    background-image: url(../background/cerisier.jpg)
-}
-
-.palette__img--on{
-    transform: scale(1.5);
-    border : 1px solid black;
 
 }
 
-
-main{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    align-content: center;
-    align-items: flex-start;
-    justify-content: space-evenly;
-    height: 100%;
-    width: 100%;
-    margin: 10px;
-}
-
-section{
-    width: 50%;
-    box-sizing: border-box;
-    min-width: 250px;
-    margin: 10px;
+ul{
+    padding: 1rem;
 }
 
 li{
-    padding: 5px;
+    padding: 1rem;
 }
 
-.left__div{
-    
-    text-align: justify;
-    padding: 10px;
-   /* border: 2px solid black;*/
-    
-}
 
-.left__div img{
-    width: 20%;
-}
-
-.left__div h2{
-    font-size: 20px;
-    padding: 10px;
-}
-
-.right__div{
-    text-align: justify;
-    padding: 10px;
-   /* border: 2px solid black;*/
-}
-
-footer{
-
-    width: 100%;
-    height: 50px;
+.social-media{
     display: flex;
-    flex-wrap: nowrap;
-    align-content: stretch;
+
+}
+
+.social-media i {
+    width: 4rem;
+    height: 4rem;
+    border: 0.1rem solid #777;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
     justify-content: center;
-    align-items: flex-start;
-   
+    margin-right: 2rem;
+    font-size: 2rem;
+    color: #555;
+    cursor: pointer;
+
 }
 
 button{
@@ -142,27 +176,23 @@ button{
 button:hover {
     background-color: #264f92;
     color: #fff;
-  }
+}
 
-  .formation {
+.formation {
     display: none;
-  
-  }
+}
 
-  .formation--on {
+.formation--on {
     display: block;
-  
-  }
+}
 
-  .xp {
+.xp {
     display: none;
-  
-  }
+}
 
-  .xp--on {
+.xp--on {
     display: block;
-  
-  }
+}
 
 /* tableau */
 table {
@@ -183,28 +213,3 @@ td {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* RPG*/
-
-.player {
-    width: 0;
-    height: 0;
-    border-style: solid;
-    border-width: 15px 0 15px 35px;
-    border-color: transparent transparent transparent blue;
-  
-    margin: 20px;
-  }
- 
