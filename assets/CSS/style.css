@@ -32,7 +32,6 @@ html {
 /*apparition du formulaire au click*/
 .container.change .banner{
     left: 10rem;
-
 }
 
 .banner p{
@@ -47,6 +46,21 @@ html {
     justify-content: center;
     font-size: 3rem;
     margin-top: 1rem;
+}
+
+.footer {
+    position:absolute;
+    left: -30rem;
+    color: #fff;
+    width: 30rem;
+    z-index: 100;
+    bottom: 10%;
+    /* transition pour l'apparition du formulaire au click*/
+    transition: left 0.8s; 
+}
+/*apparition du formulaire au click*/
+.container.change .footer{
+    left: 10rem;
 }
 
 .green-bg{
@@ -109,6 +123,8 @@ html {
     align-items: center;
     /* transition pour l'apparition du formulaire au click*/
     transition: left 1.5s cubic-bezier(0.19, 1, 0.22, 1);
+    font-size: 1.5rem;
+
 }
 
 /*apparition du cv au click*/
@@ -119,6 +135,8 @@ html {
 a{
     text-decoration: none;
     color: inherit;
+    letter-spacing: 0.1rem;
+    font-size: 1.6rem;
 }
 
 .skills{
@@ -127,8 +145,10 @@ a{
 }
 
 .skills h2{
-    font-size: 2.5rem;
+    font-size: 2rem;
     font-weight: bold;
+    padding: 0.5rem;
+    border-bottom: #0d2861 solid 2px;
 
 }
 
@@ -137,7 +157,7 @@ ul{
 }
 
 li{
-    padding: 1rem;
+    padding: 0.5rem;
 }
 
 
@@ -169,7 +189,7 @@ button{
     color: inherit;
     cursor: pointer;
     display: inline-block;
-    font-size: 1.1rem;
+    font-size: 1.5rem;
     padding: 1rem 1.6rem;
     text-align: center;
     transition: all .1s cubic-bezier(.4, 0, .2, 1);
@@ -185,6 +205,7 @@ button:hover {
 
 .formation {
     display: none;
+   
 }
 
 .formation--on {
