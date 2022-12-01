@@ -99,6 +99,7 @@ html {
 
 }
 
+
 .green-bg button {
     position: absolute;
     top: 60%;
@@ -245,13 +246,30 @@ td {
 
 
 .games{
-    display: block;
+    width: 100%;
+ 
+    display: inline-flex;
+    align-items: center;
+    align-content: space-between;
 }
 
-.games a{
-    border: none;
-    box-shadow: 5px 5px 5px 0px rgba(37,77,181,0.47);
-
+.games button{
+    background-color: #264f92;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 1.5rem;
+    padding: 1rem 1.6rem;
+    text-align: center;
+    margin: 1rem;
+    transition-property: transform;
+    transition-duration: 400ms;
 }
+
+.games button:hover{
+    transform: rotateZ(45deg)
+}
+
 
 
