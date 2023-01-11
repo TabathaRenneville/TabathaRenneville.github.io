@@ -5,6 +5,19 @@
   }
   
   h1 { text-align: center }
+
+  a{
+    text-decoration: none;
+    color: inherit;
+    font-size: 1.6rem;
+  
+  }
+
+  section#playground {
+    margin: 15px auto;
+    width: 45vw;
+    text-align: center;
+  }
   
   .cell {
     height: 100px;
@@ -25,7 +38,7 @@
     width: 300px;
     display: flex;
     flex-wrap: wrap;
-    margin: 4rem;
+    margin: 7rem;
   }
 
   .white { 
