@@ -58,19 +58,19 @@ function updateGameStatus(status) {
 
   switch (status) {
     case 'X':
-      statusText = "Au tour du joueur 2 (O)";
+      statusText = "Player 2's turn!";
       break;
     case 'O':
-      statusText = "Au tour du joueur 1 (X)";
+      statusText = "Player 1's turn!";
       break;
     case 'winsX':
-      statusText = "Le joueur 1 (X) a gagné!";
+      statusText = "Player 1 wins!";
       break;
     case 'winsO':
-      statusText = "Le joueur 2 (O) a gagné!";
+      statusText = "Player 2 wins!";
       break;
     case 'draw':
-      statusText = "Egalité! Personne ne gagne!";
+      statusText = "Damn! Nobody wins";
       break;
   }
 

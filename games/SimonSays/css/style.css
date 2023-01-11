@@ -5,6 +5,10 @@ a{
 
 }
 
+#home { 
+  padding: 10px 0 0 10px  ;
+ }
+
 section#playground {
   margin: 15px auto;
   width: 45vw;

@@ -1,16 +1,25 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    box-sizing: border-box;  
+    background-color: blanchedalmond;
   }
   
-  h1 { text-align: center }
+  h1 { 
+    text-align: center;
+  }
 
-  a{
-    text-decoration: none;
-    color: inherit;
-    font-size: 1.6rem;
-  
+  #home { 
+   padding: 10px 0 0 10px;
+   
+  }
+
+  #players{
+    border: 5px double rgb(161, 158, 158);
+    padding: 10px;
+    font-weight: bold;
+    font-style: italic;
+    font-size: large;
   }
 
   section#playground {
@@ -38,12 +47,11 @@
     width: 300px;
     display: flex;
     flex-wrap: wrap;
-    margin: 7rem;
+    margin: 5rem 17rem;
+      
   }
 
-  .white { 
-    color:white; 
-}
+ 
   
   #gameEnd {
     position: fixed;
@@ -54,7 +62,7 @@
     right: 0; 
     bottom: 0; 
     left: 0;
-   background-color: black;
+    
   }
   
   #gameEnd p, #gameEnd input {
@@ -62,11 +70,19 @@
     top: 45%; left: 45%;
     transform: translate(-45%, -45%);
     text-align: center;
-    
+    font-size: larger;
+    font-weight: 800;
   }
   
   #gameEnd p { 
-    margin-top: 5rem;
+    margin-top: 7rem;
+    font-size: 3rem;
+    
 }
 
-  
+  #gameEnd input {
+    height: 5rem;
+    width: 10rem;
+    box-shadow: rgb(37 231 30 / 35%) 0px -60px 49px -25px inset;
+    border-radius: 50%;
+  }  
