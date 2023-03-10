@@ -47,35 +47,33 @@ a{
 section {
     flex-direction: column;
     display: flex;
-    padding-top: 10px;
 }
 
 .section_title{
     color: antiquewhite;
     text-shadow: #000000 1px 1px, #000000 -1px 1px, #000000 -1px -1px, #000000 1px -1px;
     font-size: 3rem;
-    padding: 10px;
+    padding: 30px;
+    
 }
 
 .skills_div{
-    gap: 1rem;
+    margin: 30px 0; 
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: space-around;
     display: flex;
-    margin-bottom: 80px;
-}
-
-.card{
-    box-shadow:rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
-    border-radius: 20px;
-    padding: 20px;
-    background-image: radial-gradient(circle, #7ed2de, #6fe3d5, #86f0b9, #b9f893, #f9f871);    
+    background-image: radial-gradient(circle, #7ed2de, #6fe3d5, #86f0b9, #b9f893, #f9f871);  
+    border-bottom-right-radius: 100%;
+    border-top-left-radius: 100%;
 }
 
 .card_title{
     font-size: 2rem;
     text-align: center;
+    padding: 20px;
 }
+
+
 
 .skills_stack-title{
     font-size: 1.7rem;
@@ -93,10 +91,14 @@ section {
 }
 
 .xp_details{
+    margin: 30px 0; 
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: space-around;
     display: flex;
-    margin-bottom: 80px;
+    background-image: radial-gradient(circle, #7ed2de, #6fe3d5, #86f0b9, #b9f893, #f9f871);  
+    border-bottom-left-radius: 100%;
+    border-top-right-radius: 100%;
+   
 }
 
 .xp h5{
@@ -130,6 +132,7 @@ section {
 .about_me-details{
     display: flex;
     flex-direction: row;
+    align-items: center;
 }
 
 .about_me img{
@@ -141,8 +144,7 @@ section {
 
 .about_me-text{
     font-size: 1.5rem;
-    height: 50px;
-    margin: 10px;
+    text-align: justify;
 }
 
 .contact{
