@@ -1,0 +1,76 @@
+a{
+  text-decoration: none;
+  color: inherit;
+  font-size: 1.6rem;
+
+}
+
+#home { 
+  padding: 10px 0 0 10px  ;
+ }
+
+section#playground {
+  margin: 15px auto;
+  width: 45vw;
+  text-align: center;
+}
+
+div.cell {
+  width: 15vw;
+  height: 15vw;
+  min-height: 50px;
+  min-width: 50px;
+  display: inline-block;
+  margin: 10px;
+  border: 0px solid white;
+  box-sizing: border-box;
+  border-radius: 50%;
+  transition: border ease .1s;
+
+}
+
+div#yellow {
+  border-radius: 10px 12px 160px 14px / 11px 13px 170px 15px;
+}
+
+div#blue {
+  border-radius: 13px 16px 15px 170px / 12px 10px 14px 160px;
+}
+
+div#red {
+  border-radius: 170px 16px 15px 13px / 160px 10px 14px 12px;
+}
+
+div#green {
+  border-radius: 16px 170px 15px 13px / 10px 160px 14px 12px;
+}
+
+button#go {
+  display: block;
+  width: 10rem;
+  font-size: 2em;
+  height: 9rem;
+  background-color: black;
+  border: none;
+  margin: 4rem auto;
+  color: white;
+  box-shadow:  black 0px 0px 0px 2px inset,
+               rgb(255, 255, 255) 10px -10px 0px -3px,
+               rgb(31, 193, 27) 10px -10px,
+               rgb(255, 255, 255) 20px -20px 0px -3px,
+               rgb(255, 217, 19) 20px -20px,
+               rgb(255, 255, 255) 30px -30px 0px -3px, 
+               blue 30px -30px,
+               rgb(255, 255, 255) 40px -40px 0px -3px, 
+               red 40px -40px;
+  cursor: pointer;
+}
+
+div#message {
+  margin: 4rem;
+  box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+  text-align: center;
+  font-size: 2em;
+}
+
+
