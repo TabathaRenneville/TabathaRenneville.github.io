@@ -5,7 +5,6 @@ body{
 
 header {
     background-image: linear-gradient(to right bottom, #7ed2de, #6fe3d5, #86f0b9, #b9f893, #f9f871);
-    width: 100%;
     height: 50%;
 }
 
@@ -57,6 +56,29 @@ section {
     
 }
 
+.about_me{
+    flex-direction: column;
+    display: flex;
+}
+
+.about_me-details{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.about_me img{
+    border-radius: 100px 100px / 100px 100px;
+    width: 10%;
+    min-width: 250px; 
+    padding: 15px;   
+}
+
+.about_me-text{
+    font-size: 1.5rem;
+    text-align: justify;
+}
+
 .skills_div{
     margin: 30px 0; 
     flex-wrap: wrap;
@@ -72,8 +94,6 @@ section {
     text-align: center;
     padding: 20px;
 }
-
-
 
 .skills_stack-title{
     font-size: 1.7rem;
@@ -130,28 +150,6 @@ section {
         color: #f9f871;
 }
 
-.about_me{
-    flex-direction: column;
-    display: flex;
-}
-.about_me-details{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
-
-.about_me img{
-    border-radius: 100px 100px / 100px 100px;
-    width: 10%;
-    min-width: 250px; 
-    padding: 15px;   
-}
-
-.about_me-text{
-    font-size: 1.5rem;
-    text-align: justify;
-}
-
 .contact{
     padding-bottom: 40px;
 }
@@ -202,3 +200,43 @@ section {
 
 
 /* ====================== MEDIA QUERIES ============================== */
+@media only screen and (max-width: 450px) {
+
+    .header_title h1, .header_title h2{
+    font-size: 2.5rem;        
+    }
+
+    .nav_menu{
+        display: none;
+    }
+
+    .section_title{
+        font-size: 2rem;
+    }
+
+    .about_me-details{
+        flex-direction: column;
+    }
+    
+    .about_me img{
+        width: 40%;
+        min-width: 0;
+    }
+    
+    .about_me-text{
+        padding: 0 10px;    
+        font-size: 1.2rem;    
+    }
+
+    .list{
+       text-align: center;
+    }
+
+    .project_links button{
+
+        font-size: 0.8rem;
+        padding: 10px;
+
+    }
+
+}
