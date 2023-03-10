@@ -232,11 +232,16 @@ section {
        text-align: center;
     }
 
+    .xp h5{
+        font-size: 1.2rem;
+        text-align: center;
+        text-decoration: underline;
+    }
+  
     .project_links button{
-
         font-size: 0.8rem;
         padding: 10px;
-
     }
+
 
 }
