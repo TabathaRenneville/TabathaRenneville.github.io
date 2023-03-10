@@ -105,6 +105,11 @@ section {
     font-size: 1.5rem;
 }
 
+.project_links{
+    display: flex;
+    justify-content: space-around;
+}
+
 .project_links button{
         background-color: #fff;
         border: 0 solid #adcdf8;
@@ -195,3 +200,5 @@ section {
     text-align: center;
 }
 
+
+/* ====================== MEDIA QUERIES ============================== */
